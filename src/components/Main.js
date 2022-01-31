@@ -6,7 +6,7 @@ import Show from './pages/Show';
 function Main(props)
     const [ books, setBooks ] = useState(null);
 
-    const URL = 'http//localhost:4000/books';
+    const URL = 'https://project3-bookstore.herokuapp.com/';
 
     const getBooks = async () => {
         const response = await fetch(URL);
