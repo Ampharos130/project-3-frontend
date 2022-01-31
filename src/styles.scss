@@ -1,20 +1,24 @@
 //Header
 
-nav{
+.nav{
     display: flex;
     justify-content: flex-start;
+    background-color: gray;
+}
+.nav > a{
+    margin: 5px;
+    color: white;
+    text-decoration: none;
 }
 
 //Footer
 
-footer{
-    display: flex;
-    justify-content: baseline;
+.footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: gray;
     color: white;
     text-align: center;
 }
