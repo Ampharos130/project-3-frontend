@@ -94,7 +94,7 @@ function Index(props) {
         />
         <input type="submit" value="Create Book" />
       </form>
-      {props.books ? loaded() : loading()}
+      {props.book ? loaded() : loading()}
     </section>
   );
 }
