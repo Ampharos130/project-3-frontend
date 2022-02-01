@@ -1,12 +1,15 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function Index(props) {
   // state to hold formData
-  const [ newForm, setNewForm ] = useState({
-    name: "",
-    image: "",
+  const [newForm, setNewForm] = useState({
     title: "",
+    img: "",
+    author: "",
+    descript: "",
+    price: "",
+    qty: ""
   });
 
   // handleChange function for form
@@ -17,20 +20,25 @@ function Index(props) {
   // handle submit function for form
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.createPeople(newForm);
+    props.createBook(newForm);
     setNewForm({
-      name: "",
-      image: "",
       title: "",
+      img: "",
+      author: "",
+      descript: "",
+      price: "",
+      qty: ""
     });
   };
   // loaded function
   const loaded = () => {
-    return props.books.map((book) => (
-      <div key={book._id} className="book">
-        <Link to={`/books/${book._id}`}><h1>{book.name}</h1></Link>
-        <img src={book.image} alt={book.name} />
-        <h3>{book.title}</h3>
+    return props.book.map((books) => (
+      <div key={books._id} className="books">
+        <Link to={`/books/${books._id}`}>
+          <h1>{books.title}</h1>
+        </Link>
+        <img src={books.img} alt={books.title} />
+        <h3>{books.author}</h3>
       </div>
     ));
   };
@@ -44,23 +52,44 @@ function Index(props) {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={newForm.name}
-          name="name"
-          placeholder="name"
+          value={newForm.title}
+          name="title"
+          placeholder="title"
           onChange={handleChange}
         />
         <input
           type="text"
-          value={newForm.image}
-          name="image"
+          value={newForm.img}
+          name="img"
           placeholder="image URL"
           onChange={handleChange}
         />
         <input
           type="text"
-          value={newForm.title}
-          name="title"
-          placeholder="title"
+          value={newForm.author}
+          name="author"
+          placeholder="author"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.descript}
+          name="descript"
+          placeholder="description"
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          value={newForm.price}
+          name="price"
+          placeholder="price"
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          value={newForm.qty}
+          name="qty"
+          placeholder="quantity"
           onChange={handleChange}
         />
         <input type="submit" value="Create Book" />

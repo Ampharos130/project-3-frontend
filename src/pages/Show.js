@@ -1,11 +1,12 @@
 import { useState } from "react"
+
 function Show(props) {
   const id = props.match.params.id;
-  const books = props.books;
-  const book = book.find(p => p._id === id);
+  const book = props.book;
+  const books = book.find(p => p._id === id);
 
   // state for form
-  const [ editForm, setEditForm ] = useState(book);
+  const [ editForm, setEditForm ] = useState(books);
 
   // handleChange function for form
   const handleChange = event => {
@@ -15,39 +16,65 @@ function Show(props) {
   // handlesubmit for form
   const handleSubmit = event => {
     event.preventDefault();
-    props.updateBooks(editForm, book._id);
+    props.updateBook(editForm, books._id);
     // redirect people back to index
     props.history.push("/");
   }
 
+  const removeBooks = () =>{
+    props.deleteBook(books._id);
+    props.history.push("/");
+  }
+
   return (
-    <div className="book">
-      <h1>{book.name}</h1>
-      <h2>{book.title}</h2>
-      <img src={book.image} alt={book.name} />
-      <button id="delete" onClick={deleteBook}>
+    <div className="books">
+      <h1>{books.title}</h1>
+      <h2>{books.author}</h2>
+      <img src={books.img} alt={books.title} />
+      <button id="delete" onClick={removeBooks}>
         DELETE
       </button>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={editForm.name}
-          name="name"
-          placeholder="name"
+          value={editForm.title}
+          name="title"
+          placeholder="title"
           onChange={handleChange}
         />
         <input
           type="text"
-          value={editForm.image}
-          name="image"
+          value={editForm.img}
+          name="img"
           placeholder="image URL"
           onChange={handleChange}
         />
         <input
           type="text"
-          value={editForm.title}
-          name="title"
-          placeholder="title"
+          value={editForm.author}
+          name="author"
+          placeholder="author"
+          onChange={handleChange}
+        />
+         <input
+          type="text"
+          value={editForm.descript}
+          name="descript"
+          placeholder="description"
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          value={editForm.price}
+          name="price"
+          placeholder="price"
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          value={editForm.qty}
+          name="qty"
+          placeholder="quantity"
           onChange={handleChange}
         />
         <input type="submit" value="Update Book" />
