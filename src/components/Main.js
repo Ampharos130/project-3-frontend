@@ -3,10 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import Index from './pages/Index';
 import Show from './pages/Show';
 
-function Main(props)
+function Main(props) {
     const [ books, setBooks ] = useState(null);
 
-    const URL = 'http//localhost:4000/books';
+    const URL = 'http://project3-bookstore.herokuapp.com/books';
 
     const getBooks = async () => {
         const response = await fetch(URL);
@@ -21,7 +21,7 @@ function Main(props)
           headers: {
             "Content-Type": "Application/json",
           },
-          body: JSON.stringify(book),
+          body: JSON.stringify(books),
         });
         
         getBooks();
@@ -69,5 +69,5 @@ function Main(props)
         </main>
       );
     
-    
+};
     export default Main;
