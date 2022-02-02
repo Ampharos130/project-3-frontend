@@ -64,7 +64,7 @@ function Main(props) {
           )}
         />
         <Route path="/create">
-          <Create URL={URL} />
+          <Create book={book} createBook={createBook}/>
         </Route>
       </Switch>
     </main>
