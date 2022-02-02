@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Index from '../pages/Index';
 import Show from '../pages/Show';
+import Create from '../pages/Create';
 
 function Main(props) {
   const [book, setBook] = useState(null);
@@ -62,6 +63,9 @@ function Main(props) {
             />
           )}
         />
+        <Route path="/create">
+          <Create URL={URL} />
+        </Route>
       </Switch>
     </main>
   );
