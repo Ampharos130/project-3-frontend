@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Route, Switch } from 'react-router-dom';
+import Create from "../pages/Create";
 
 function Header(props) {
     return (
@@ -6,6 +8,9 @@ function Header(props) {
             <nav className="nav">
                 <Link to='/'>
                     <h2>The Last Chapter</h2>
+                </Link>
+                <Link to='/create'>
+                    <h4>Create New Book</h4>
                 </Link>
             </nav>
         </div>
