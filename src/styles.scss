@@ -23,3 +23,33 @@
     color: white;
     text-align: center;
 }
+
+//Create Page
+.container{
+    width: 80vw;
+    height: 40vw;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ddd,
+               -1px -1px 10px #ddd,
+                1px -1px 10px #ddd,
+               -1px 1px 10px #ddd;
+}
+.create{
+    width: 50%;
+    background: rgb(203, 203, 203);
+    border-radius: 10px 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.create > form{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.create > form >input{
+    padding: 4px;
+}
