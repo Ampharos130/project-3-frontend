@@ -1,6 +1,6 @@
 # The Last Chapter 
 
-An application that allows you to search, view, purchase and remove books from an api. 
+An application that allows the user to list out all their favorite books .
 
 ## Technologies Used
 
@@ -13,22 +13,20 @@ An application that allows you to search, view, purchase and remove books from a
 
 ## Screenshots
 
-![]()
-![]()
+![Imgur](https://imgur.com/sE1Nl3w)
+![Imgur](https://imgur.com/LesO1wi)
 
 ## Getting Started
 
-Click on a book to view its price and info. You can then update the info or delete the book entirely. Feel free too experiment and create a book as well!
-Click [Here]() to launch the app!
+Click on a book to view its price and info. You can then update the info or delete the book entirely. Feel free to experiment and create a book as well!
+Click [Here](https://thelastchapter.netlify.app/) to launch the app!
 
 ## Unsolved Errors
 
--
--
--
+-Have a fully finished authentication piece in the project.
 
 ## Future Enhancements
 
--
--
--
+-A login system
+-An api that allows the user the option to search through a variety of different books.
+
