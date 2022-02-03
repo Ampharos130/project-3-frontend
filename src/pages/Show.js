@@ -38,6 +38,7 @@ function Show(props) {
       <br />
       <div className="showContainer">
       <div className="show">
+        <h3>Edit Book</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
