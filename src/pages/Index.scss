@@ -4,7 +4,7 @@
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-evenly;
-   
+    
 
 .books{
     margin-top: 3rem;
@@ -16,3 +16,27 @@
     max-width: 200px;
 }
 
+.indexTitle{
+    font-size: 50px;
+}
+
+p{
+    font-size: larger;
+}
+
+.welcomeDiv{
+    width: 60vw;
+    height: 8vw;
+    margin: 40px auto;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ddd,
+               -1px -1px 10px #ddd,
+                1px -1px 10px #ddd,
+               -1px 1px 10px #ddd;
+}
+
+.App{
+    margin-bottom: 70px;
+}

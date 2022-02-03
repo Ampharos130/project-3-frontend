@@ -24,6 +24,10 @@ function Index(props) {
 
   return (
     <section>
+      <div className="welcomeDiv">
+      <h1 className="indexTitle">Welcome to The Last Chapter</h1>
+      <p>Here you can list or buy anybook availble to read to your heart's content</p>
+      </div>
       <div className="indexDiv">
       {props.book ? loaded() : loading()}
       </div>
