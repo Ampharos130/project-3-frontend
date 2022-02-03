@@ -32,7 +32,7 @@ function Create(props) {
     return (
         <div className='container'>
             <div className='create'>
-                <h1>New Book Form</h1>
+                <h2>New Book Form</h2>
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
