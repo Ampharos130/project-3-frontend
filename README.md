@@ -13,8 +13,8 @@ An application that allows the user to list out all their favorite books .
 
 ## Screenshots
 
-![Imgur](https://imgur.com/sE1Nl3w)
-![Imgur](https://imgur.com/LesO1wi)
+![Imgur](https://imgur.com/sE1Nl3w.png)
+![Imgur](https://imgur.com/LesO1wi.png)
 
 ## Getting Started
 
