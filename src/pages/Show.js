@@ -30,7 +30,10 @@ function Show(props) {
     <div className="books">
       <h1>{books.title}</h1>
       <h2>{books.author}</h2>
+      <h3>{books.descript}</h3>
       <img src={books.img} alt={books.title} className="showImg"/>
+      <h4>Price: ${books.price}</h4>
+      <h4>Quantity: {books.qty}</h4>
       <br />
       <button id="delete" onClick={removeBooks} className="delete">
         DELETE
