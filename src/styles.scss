@@ -1,9 +1,12 @@
+*{
+    font-family: 'Playfair Display', serif;
+}
 //Header
 
 .nav{
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: rgb(182, 182, 182);
     align-items: center;
 }
 .nav > a{
@@ -19,7 +22,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(182, 182, 182);
     color: white;
     text-align: center;
 }
