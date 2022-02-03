@@ -5,12 +5,12 @@ import Create from "../pages/Create";
 function Header(props) {
     return (
         <div>
-            <nav className="nav">
+            <nav className="nav" >
                 <Link to='/'>
-                    <h2>The Last Chapter</h2>
+                    <h2 style={{fontFamily: 'Quintessential, cursive'}}>The Last Chapter</h2>
                 </Link>
                 <Link to='/create'>
-                    <h4>Create New Book</h4>
+                    <h4 style={{fontFamily: 'Quintessential, cursive'}}>Create New Book</h4>
                 </Link>
             </nav>
         </div>
