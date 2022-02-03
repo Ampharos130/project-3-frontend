@@ -30,10 +30,14 @@ function Show(props) {
     <div className="books">
       <h1>{books.title}</h1>
       <h2>{books.author}</h2>
-      <img src={books.img} alt={books.title} />
-      <button id="delete" onClick={removeBooks}>
+      <img src={books.img} alt={books.title} className="showImg"/>
+      <br />
+      <button id="delete" onClick={removeBooks} className="delete">
         DELETE
       </button>
+      <br />
+      <div className="showContainer">
+      <div className="show">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -77,8 +81,12 @@ function Show(props) {
           placeholder="quantity"
           onChange={handleChange}
         />
+        <div className="update">
         <input type="submit" value="Update Book" />
+        </div>
       </form>
+      </div>
+      </div>
     </div>
   );
 }
