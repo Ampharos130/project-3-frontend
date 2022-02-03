@@ -69,13 +69,6 @@ function Create(props) {
                         placeholder="price"
                         onChange={handleChange}
                     />
-                    <input
-                        type="number"
-                        value={newForm.qty}
-                        name="qty"
-                        placeholder="quantity"
-                        onChange={handleChange}
-                    />
                     <br />
                     <div className='newButton'>
                         <input type="submit" value="Create Book" />
