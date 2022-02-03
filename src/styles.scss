@@ -18,17 +18,22 @@
 //Footer
 
 .footer{
-    position: fixed;
+    position:fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgb(182, 182, 182);
     color: white;
     text-align: center;
+   
 }
 
 //Create Page
 .container{
+    background-image: url('https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHN0b3J5JTIwYm9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
     width: 80vw;
     height: 40vw;
     margin: 50px auto;
@@ -55,4 +60,75 @@
 }
 .create > form >input{
     padding: 4px;
+    margin: 2px;
+    border: 2px solid olive;
+    border-radius: 6px;
 }
+.create >h2{
+    font-family: 'Quintessential', cursive;
+    border-bottom: 2px solid olive;
+    color: rgb(63, 63, 63);
+}
+
+//Show Page
+.showImg{
+    max-width: 200px;
+}
+
+.showContainer{
+    width: 60vw;
+    height: 30vw;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ddd,
+               -1px -1px 10px #ddd,
+                1px -1px 10px #ddd,
+               -1px 1px 10px #ddd;
+}
+
+.show{
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+    background: rgb(242, 242, 242);
+    border-radius: 10px;
+}
+.show > form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show > form >input{
+    padding: 6px;
+    width: 500px;
+    margin: 2px;
+    border: 2px solid olive;
+    border-radius: 6px;
+}
+.delete{
+    margin: 12px;
+}
+
+//Buttons
+input[type="submit"], .delete {
+    background: whitesmoke;
+    box-shadow: 2px 2px gold;
+    color: black;
+    border: 0px;
+    transition: 0.2s ease-in-out;
+  }
+
+  input[type="submit"]:hover{
+    cursor: pointer;
+    background: olive;
+    box-shadow: 2px 2px gold;
+  }
+
+  .delete:hover {
+    cursor: pointer;
+    background: red;
+    box-shadow: 2px 2px gold;
+  }
