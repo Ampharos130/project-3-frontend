@@ -23,10 +23,10 @@ Click [Here](https://thelastchapter.netlify.app/) to launch the app!
 
 ## Unsolved Errors
 
--Have a fully finished authentication piece in the project.
+- Add in authentication so each user can have a personaized list of books.
 
 ## Future Enhancements
 
--A login system
--An api that allows the user the option to search through a variety of different books.
+- A login system
+- An api that allows the user the option to search through a variety of different books.
 
